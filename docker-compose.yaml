@@ -1,0 +1,10 @@
+services:
+	pipeline:
+		build: .
+		ports:
+			- "5432:5432"
+	grafana:
+		image: "grafana/grafana"
+		ports:
+			- "3000:3000"
+	

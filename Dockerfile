@@ -36,9 +36,9 @@ RUN mkdir -p /starter_config
 
 # Stage default configuration, metrics spec and example setup
 COPY ./pipeline /pipeline
-COPY ./pipeline.conf /starter_config/pipeline.config
-COPY ./metrics.json /starter_config/metrics.json
-COPY ./private.pem /starter_config/private.pem
+COPY ./conf/pipeline.conf /starter_config/pipeline.config
+COPY ./conf/metrics.json /starter_config/metrics.json
+COPY ./conf/private.pem /starter_config/private.pem
 
 VOLUME ["/data"]
 EXPOSE 5432
