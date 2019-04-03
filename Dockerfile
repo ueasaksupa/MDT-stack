@@ -45,4 +45,4 @@ EXPOSE 5432
 
 WORKDIR /
 ENTRYPOINT ["/pipeline"]
-CMD ["-log=/data/pipeline.log","-config=/data/pipeline.conf","-pem=/conf/private.pem"]
+CMD ["-log=/data/pipeline.log","-config=/data/pipeline.conf","-pem=/data/private.pem"]
